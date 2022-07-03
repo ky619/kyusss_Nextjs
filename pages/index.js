@@ -54,11 +54,11 @@ export default function Home({results}){
       );
 }
 
-export async function getServerSideProps() {        //!!(get...)이름 매우 중요!!   서버에서만 실행됨
-    const { results } = await (await fetch(`http://localhost:3000//api/movies`)).json();
-    return {
-        props: {
-            results,
-        },
-    };
-}
+// export async function getServerSideProps() {        //!!(get...)이름 매우 중요!!   서버에서만 실행됨
+//     const { results } = await (await fetch(`http://localhost:3000//api/movies`)).json();
+//     return {
+//         props: {
+//             results,
+//         },
+//     };
+// }
